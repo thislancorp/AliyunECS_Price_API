@@ -9,8 +9,11 @@ AliyunECS_Price_API
 使用方法：
 
 <?php
+
 require_once "ecs.price.class.php";
-$price=new ecsPrice(2,2560,230,5,null); 从左到右: CPU（核）/内存（Mb）/数据盘（Gb）/带宽（mbps）
+
+$price=new ecsPrice(2,2560,230,5,null); //从左到右: CPU（核）/内存（Mb）/数据盘（Gb）/带宽（mbps）
+
 echo $price->getPrice();
 ?>
 
