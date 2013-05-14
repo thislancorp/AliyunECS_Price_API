@@ -12,7 +12,7 @@ AliyunECS_Price_API
 
 require_once "ecs.price.class.php";
 
-$price=new ecsPrice(2,2560,230,5,null); //从左到右: CPU（核）/内存（Mb）/数据盘（Gb）/带宽（mbps）
+$price=new ecsPrice(2,2560,230,5,null); //从左到右: CPU（核）/内存（Mb）/数据盘（Gb）/带宽（mbps）/系统编号（目前没多大用）
 
 echo $price->getPrice();
 ?>
